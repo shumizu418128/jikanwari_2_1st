@@ -1,0 +1,161 @@
+body {
+    background-image: url("Dual-Robot-Left.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: auto;
+    height: 150%;
+}
+
+table th {
+    color: #50bfff;
+    font-size: x-large;
+    font-weight: larger;
+}
+
+table td {
+    border: dashed 2px #50bfff;
+}
+
+
+/* コピーボタン */
+
+.copy_btn {
+    width: 80px!important;
+    padding: 5px!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    color: #000000;
+    font-weight: bold;
+    background: #ffffff;
+    border: solid 2px #ffc250;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+}
+
+.copy_btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.copy_btn:hover {
+    cursor: pointer;
+}
+
+
+/*ポップアップここから*/
+
+.popup_wrap input {
+    display: none;
+}
+
+.popup_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0s 0.2s;
+    transform: scale(0);
+}
+
+.popup_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.popup_content {
+    position: relative;
+    align-self: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 30px 30px 15px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transition: 0.2s;
+}
+
+.close_btn {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.popup_wrap_m1 input:checked~.popup_overlay_m1,
+.popup_wrap_m2 input:checked~.popup_overlay_m2,
+.popup_wrap_m3 input:checked~.popup_overlay_m3,
+.popup_wrap_m4 input:checked~.popup_overlay_m4,
+.popup_wrap_m5 input:checked~.popup_overlay_m5,
+.popup_wrap_tu1 input:checked~.popup_overlay_tu1,
+.popup_wrap_tu2 input:checked~.popup_overlay_tu2,
+.popup_wrap_tu3 input:checked~.popup_overlay_tu3,
+.popup_wrap_tu4 input:checked~.popup_overlay_tu4,
+.popup_wrap_tu5 input:checked~.popup_overlay_tu5,
+.popup_wrap_w1 input:checked~.popup_overlay_w1,
+.popup_wrap_w2 input:checked~.popup_overlay_w2,
+.popup_wrap_w3 input:checked~.popup_overlay_w3,
+.popup_wrap_w4 input:checked~.popup_overlay_w4,
+.popup_wrap_w5 input:checked~.popup_overlay_w5,
+.popup_wrap_th1 input:checked~.popup_overlay_th1,
+.popup_wrap_th2 input:checked~.popup_overlay_th2,
+.popup_wrap_th3 input:checked~.popup_overlay_th3,
+.popup_wrap_th4 input:checked~.popup_overlay_th4,
+.popup_wrap_th5 input:checked~.popup_overlay_th5,
+.popup_wrap_f1 input:checked~.popup_overlay_f1,
+.popup_wrap_f2 input:checked~.popup_overlay_f2,
+.popup_wrap_f3 input:checked~.popup_overlay_f3,
+.popup_wrap_f4 input:checked~.popup_overlay_f4,
+.popup_wrap_f5 input:checked~.popup_overlay_f5,
+.popup_wrap input:checked~.popup_overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.2s;
+}
+
+.open_btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50%;
+    margin: 10px auto;
+    padding: 8px 16px;
+    color: rgb(0, 0, 0);
+    background: #ffc250;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.open_btn:hover {
+    background: rgb(51, 224, 255);
+    color: rgb(0, 0, 0);
+    transition: .2s ease;
+}
+
+
+/*ポップアップココまで*/
